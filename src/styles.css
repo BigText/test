@@ -37,3 +37,8 @@ main > h1 {
     width: 150px;
     border: solid;
 }
+.divTop
+{
+    float:left;
+    width:100px;
+}
