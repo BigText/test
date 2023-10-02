@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.devcontainer",
+    "\\.devcontainer\\library-scripts",
+    "\\.github",
+    "\\src"
   ],
-  "SelectedNode": "\\C:\\Users\\matthew.nguyen\\source\\repos\\test",
+  "SelectedNode": "\\src\\styles.css",
   "PreviewInSolutionExplorer": false
 }
