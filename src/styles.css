@@ -45,4 +45,6 @@ main > h1 {
     height: 100px;
     width:100px;
     border:dashed;
+    text-align:center;
+    margin:auto;
 }
