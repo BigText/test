@@ -31,6 +31,7 @@ main > h1 {
 {
     background-color: red;
     height: 100px;
+    flex-direction:row
 }
 #img1
 {
@@ -41,5 +42,7 @@ main > h1 {
 .divTop
 {
     float:left;
+    height: 100px;
     width:100px;
+    border:dashed;
 }
