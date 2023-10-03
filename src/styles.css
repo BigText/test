@@ -48,3 +48,7 @@ main > h1 {
     text-align:center;
     margin:auto;
 }
+.center
+{
+    top:50%;
+}
