@@ -22,9 +22,8 @@ getapi(api_url);
 function show(data) {
     let tab = "  <tr>  <th>id</th> <th>Name</th> <th>Level</th></tr>";
 
-    // Loop to access all rows 
-    for (let r of data.list) {
-        tab += "<tr>   <td>${r.id} </td> <td>${r.name}</td> <td>${r.level}</td>   </tr>";
+
+    tab += "<tr>   <td>${data.id} </td> <td>${data.name}</td> <td>${data.level}</td>   </tr>";
     }
     // Setting innerHTML as tab variable
     document.getElementById("employees").innerHTML = tab;
