@@ -1,10 +1,11 @@
 
 // api url
-const api_url =
-    "https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/MmmmmmTacos?api_key=RGAPI-2a2fe529-accb-4cd9-a70a-281e9eb39b2f";
 
 // Defining async function
-async function getapi(url) {
+async function getapi() {
+
+    const url =
+        "https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/MmmmmmTacos?api_key=RGAPI-2a2fe529-accb-4cd9-a70a-281e9eb39b2f";
 
     // Storing response
     const response = await fetch(url);
@@ -12,6 +13,8 @@ async function getapi(url) {
     // Storing data in form of JSON
     var data = await response.json();
     console.log(data);
+
+    show(data)
 }
 // Calling that async function
 getapi(api_url);
