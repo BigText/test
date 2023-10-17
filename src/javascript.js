@@ -23,7 +23,7 @@ function show(data) {
     let tab = "  <tr>  <th>id</th> <th>Name</th> <th>Level</th></tr>";
 
 
-    tab += "<tr>   <td>"+ data.id + "</td > <td>${data.name}</td> <td>${data.level}</td>   </tr > ";
+    tab += "<tr>   <td>"+ data.id + "</td > <td> " + data.name + "</td> <td> "+data.level + "  </td>   </tr > ";
     
     // Setting innerHTML as tab variable
     document.getElementById("employees").innerHTML = tab;
