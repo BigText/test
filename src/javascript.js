@@ -24,7 +24,7 @@ function show(data) {
 
 
     tab += "<tr>   <td>${data.id} </td> <td>${data.name}</td> <td>${data.level}</td>   </tr>";
-    }
+    
     // Setting innerHTML as tab variable
     document.getElementById("employees").innerHTML = tab;
 }
