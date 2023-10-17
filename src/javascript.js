@@ -12,18 +12,16 @@ async function getapi(url) {
     // Storing data in form of JSON
     var data = await response.json();
     console.log(data);
-
-    show(data);
 }
 // Calling that async function
 getapi(api_url);
 
 // Function to define innerHTML for HTML table
 function show(data) {
-    let tab = "  <tr>  <th>id</th> <th>Name</th> <th>Level</th></tr>";
+    let tab = "  <tr>  <th>Name</th> <th>Level</th></tr>";
 
 
-    tab += "<tr>   <td>"+ data.id + "</td > <td> " + data.name + "</td> <td> "+data.level + "  </td>   </tr > ";
+    tab += "<tr>  <td> " + data.name + "</td> <td> " + data.summonerLevel + "  </td>   </tr > ";
     
     // Setting innerHTML as tab variable
     document.getElementById("employees").innerHTML = tab;
