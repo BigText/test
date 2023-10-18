@@ -22,5 +22,13 @@ main > h1 {
 
 
 #summoner1 {
-    background-image: url(https://i.imgur.com/4jY7dC6.jpg)
+    background-image: url(https://i.imgur.com/4jY7dC6.jpg);
+    background-clip:content-box;
+}
+#title
+{
+    padding:10px;
+    align-content:center;
+    height:20px;
+    
 }
