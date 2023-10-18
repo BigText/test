@@ -16,7 +16,6 @@ async function getapi(summonerName) {
     show(data)
 }
 
-// Function to define innerHTML for HTML table
 async function getMatchHistory(puuid)
 {
     const url = "https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/" + puuid + "/ids?start=0&count=20&api_key=" + hehe;
@@ -38,7 +37,7 @@ function showMH(data)
 }
 async function getMatchInfo(MatchID)
 {
-    const url = "https://americas.api.riotgames.com/lol/match/v5/matches/" + Match + "?api_key=" + hehe;
+    const url = "https://americas.api.riotgames.com/lol/match/v5/matches/" + MatchID + "?api_key=" + hehe;
     const response = await fetch(url);
     var data = await response.json();
     console.log(data);
