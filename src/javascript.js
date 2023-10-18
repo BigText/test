@@ -42,6 +42,6 @@ async function getMatchInfo(MatchID,summonerID)
     var data = await response.json();
     console.log(data);
     console.log(summonerID);
-    console.log(data.info.participants.find(x => x == summonerID));
+    console.log(data.info.participants.find(x => x.summonerName == summonerID));
 
 }
