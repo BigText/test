@@ -36,7 +36,7 @@ function showMH(data)
     data.forEach(match => getMatchInfo(Match))
 
 }
-function getMatchInfo(MatchID)
+async function getMatchInfo(MatchID)
 {
     const url = "https://americas.api.riotgames.com/lol/match/v5/matches/" + Match + "?api_key=" + hehe;
     const response = await fetch(url);
