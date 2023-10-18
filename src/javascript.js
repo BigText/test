@@ -41,6 +41,7 @@ async function getMatchInfo(MatchID,summonerID)
     const response = await fetch(url);
     var data = await response.json();
     console.log(data);
+    console.log(summonerID)
     console.log(data.info.participants.find(x => x == summonerID))
 
 }
