@@ -16,30 +16,31 @@ async function getapi(summonerName) {
     show(data)
 }
 
-async function getMatchHistory(puuid)
+async function getMatchHistory(puuid,summonerID)
 {
     const url = "https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/" + puuid + "/ids?start=0&count=20&api_key=" + hehe;
     const response = await fetch(url);
 
     var data = await response.json();
     console.log(data);
-    showMH(data);
+    showMH(data,summonerID);
 }
 function show(data) {
-    getMatchHistory(data.puuid)
+    getMatchHistory(data.puuid, data.name)
     // Setting innerHTML as tab variable
     document.getElementById("employees").innerHTML += "<tr>  <td> " + data.name + "</td> <td> " + data.summonerLevel + "  </td>   </tr > "
 }
-function showMH(data)
+function showMH(data,summonerID)
 {
-    data.forEach(Match => getMatchInfo(Match))
+    data.forEach(Match => getMatchInfo(Match,summonerID))
 
 }
-async function getMatchInfo(MatchID)
+async function getMatchInfo(MatchID,summonerID)
 {
     const url = "https://americas.api.riotgames.com/lol/match/v5/matches/" + MatchID + "?api_key=" + hehe;
     const response = await fetch(url);
     var data = await response.json();
     console.log(data);
+    console.log(data.info.participants.find(x => x == summonerID))
 
 }
