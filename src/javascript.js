@@ -43,7 +43,7 @@ async function getMatchInfo(MatchID,summonerID)
     console.log(data);
     console.log(data.info.participants.find(x => x.summonerName == summonerID));
     var summoner = data.info.participants.find(x => x.summonerName == summonerID);
-    document.getElementById("Matches").innerHTML +=  "<tr>  <td> D: " +summoner.deaths+ "</td>  <td>" + summoner.win + " </td> <td>" + summoner.Champion + "</td></tr>" 
+    document.getElementById("Matches").innerHTML +=  "<tr>  <td> D: " +summoner.deaths+ "</td>  <td>" + summoner.win + " </td> <td>" + summoner.championName + "</td></tr>" 
 
 
 }
