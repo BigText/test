@@ -33,10 +33,13 @@ function show(data) {
 }
 function showMH(data)
 {
-    data.foreach(match => getMatchInfo(Match))
+    data.forEach(match => getMatchInfo(Match))
 
 }
 function getMatchInfo(MatchID)
 {
+    const url = "https://americas.api.riotgames.com/lol/match/v5/matches/" + Match + "?api_key=RGAPI-2a2fe529-accb-4cd9-a70a-281e9eb39b2f";
+    const response = await fetch(url);
+    var data = await response.json();
 
 }
