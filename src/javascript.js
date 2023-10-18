@@ -41,7 +41,9 @@ async function getMatchInfo(MatchID,summonerID)
     const response = await fetch(url);
     var data = await response.json();
     console.log(data);
-    console.log(summonerID);
     console.log(data.info.participants.find(x => x.summonerName == summonerID));
+    var summoner = data.info.participants.find(x => x.summonerName == summonerID);
+    document.getElementById("Matches").innerHTML +=  "<tr>  <td> Deaths" +summoner.deaths+ "<td>"
+
 
 }
