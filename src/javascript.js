@@ -1,10 +1,10 @@
 
 // api url
-
+const hehe = "RGAPI-8b1526e3-0ba7-4aef-8f94-a68317e8cb6c"
 // Defining async function
 async function getapi(summonerName) {
 
-   const url = "https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/"+summonerName+"?api_key=RGAPI-2a2fe529-accb-4cd9-a70a-281e9eb39b2f";
+   const url = "https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/"+summonerName+"?api_key=" + hehe;
 
     // Storing response
     const response = await fetch(url);
@@ -19,7 +19,7 @@ async function getapi(summonerName) {
 // Function to define innerHTML for HTML table
 async function getMatchHistory(puuid)
 {
-    const url = "https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/" + puuid + "/ids?start=0&count=20&api_key=RGAPI-2a2fe529-accb-4cd9-a70a-281e9eb39b2f";
+    const url = "https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/" + puuid + "/ids?start=0&count=20&api_key=" + hehe;
     const response = await fetch(url);
 
     var data = await response.json();
@@ -38,7 +38,7 @@ function showMH(data)
 }
 function getMatchInfo(MatchID)
 {
-    const url = "https://americas.api.riotgames.com/lol/match/v5/matches/" + Match + "?api_key=RGAPI-2a2fe529-accb-4cd9-a70a-281e9eb39b2f";
+    const url = "https://americas.api.riotgames.com/lol/match/v5/matches/" + Match + "?api_key=" + hehe;
     const response = await fetch(url);
     var data = await response.json();
 
