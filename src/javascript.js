@@ -33,7 +33,7 @@ function show(data) {
 }
 function showMH(data)
 {
-    data.forEach(match => getMatchInfo(Match))
+    data.forEach(Match => getMatchInfo(Match))
 
 }
 async function getMatchInfo(MatchID)
