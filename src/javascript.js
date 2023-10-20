@@ -1,6 +1,6 @@
 
 // api url
-const hehe = "RGAPI-8b1526e3-0ba7-4aef-8f94-a68317e8cb6c"
+const hehe = "RGAPI-337ccede-7c44-4f9a-ab9a-924abd1c5ad2"
 // Defining async function
 async function getapi(summonerName) {
 
